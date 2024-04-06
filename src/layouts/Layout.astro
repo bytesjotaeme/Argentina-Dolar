@@ -1,0 +1,65 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/dolar-icon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    /* Estilos personalizados para el tema cyberpunk */
+    :root {
+        --accent: 150, 0, 255; /* Color principal (morado) */
+        --accent-light: 255, 150, 0; /* Color secundario (naranja) */
+        --accent-dark: 0, 255, 150; /* Color de acento (verde) */
+        --background: #000; /* Color de fondo (negro) */
+        --text-color: #fff; /* Color de texto (blanco) */
+        --accent-gradient: linear-gradient(
+            45deg,
+            rgb(var(--accent)),
+            rgb(var(--accent-light)) 30%,
+            rgb(var(--accent-dark)) 70%
+        );
+    }
+
+    /* Estilos específicos de Tailwind para el tema cyberpunk */
+    html {
+        font-family: 'Roboto', sans-serif; /* Cambia la fuente según tus preferencias */
+        background: var(--background);
+        color: var(--text-color);
+    }
+
+    button {
+        @apply bg-purple-600 text-white font-semibold py-2 px-4 rounded;
+    }
+
+    button:hover {
+        @apply bg-purple-700;
+    }
+
+    a {
+        @apply text-purple-600 hover:text-purple-700;
+    }
+
+    code {
+        @apply font-mono;
+    }
+</style>
