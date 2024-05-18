@@ -16,4 +16,4 @@ JavaScript: Para lógica de programación, manipulación del DOM y actualizació
 Tailwind CSS: Para estilos y diseño de la interfaz de usuario.
 DolarAPI: Para la obtención de datos actualizados sobre el precio del dólar en Argentina.
 
-![Captura de Pantalla](https://github.com/bytesjotaeme/Argentina-Dolar/blob/main/preview.PNG)
+![Captura de Pantalla](https://github.com/bytesjotaeme/Argentina-Dolar/blob/main/previeww.JPG)
