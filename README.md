@@ -18,4 +18,4 @@ DolarAPI: Para la obtención de datos actualizados sobre el precio del dólar en
 
 
 Actualizado 1/07/2024
-![Captura de Pantalla](https://github.com/bytesjotaeme/Argentina-Dolar/blob/main/previeww.JPG)
+![Captura de Pantalla](https://github.com/bytesjotaeme/Argentina-Dolar/blob/main/dolar.jpg)
